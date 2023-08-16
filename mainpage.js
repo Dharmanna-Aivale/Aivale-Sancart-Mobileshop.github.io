@@ -52,6 +52,11 @@ const clearErr=(errid)=>{
     document.getElementById('spanlname').innerHTML="** Please fill the user name ";
     return false;
   }
+      if(password.length<=2){
+    document.getElementById('spanlname').innerHTML="*** Weak password.. ";
+    return false;
+
+  } 
   else {
     return true;
   }
